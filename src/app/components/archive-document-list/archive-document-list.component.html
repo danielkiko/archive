@@ -1,0 +1,32 @@
+<div class="container-fluid mt-3 ml3">
+  <div class="table-responsive">
+    <table class="table w-100">
+      <thead>
+      <tr>
+        <th scope="col">Код</th>
+        <th scope="col">Имя</th>
+        <th scope="col">Тип</th>
+        <th scope="col">Имя сотрудника</th>
+        <th scope="col">Фамилия сотрудника</th>
+        <th scope="col">Имя места хранения</th>
+        <th scope="col">Адрес места хранения</th>
+        <th scope="col">Дата начала хранения</th>
+        <th scope="col">Дата окончания хранения</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr *ngFor="let archiveDocument of archiveDocuments" (click)="linkTo(archiveDocument.id)">
+        <td>{{ archiveDocument.id }}</td>
+        <td>{{ archiveDocument.document.name }}</td>
+        <td>{{ archiveDocument.document.documentType.name }}</td>
+        <td>{{ archiveDocument.employee.name }}</td>
+        <td>{{ archiveDocument.employee.surname }}</td>
+        <td>{{ archiveDocument.storagePlace.name }}</td>
+        <td>{{ archiveDocument.storagePlace.address }}</td>
+        <td>{{ archiveDocument.creationDate }}</td>
+        <td>{{ archiveDocument.expirationDate }}</td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

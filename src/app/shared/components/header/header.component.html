@@ -1,0 +1,53 @@
+<div class="container">
+  <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+    <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
+      <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"/></svg>
+      <span class="fs-4">Политех</span>
+    </a>
+
+    <ul class="nav nav-pills">
+      <li class="nav-item"><a [routerLink]="'/archiveDocuments'"
+                              [routerLinkActive]="'active'"
+                              [routerLinkActiveOptions]="{ exact: true }" class="nav-link" class="nav-link active" aria-current="page">Архивные документы</a></li>
+      <li class="nav-item"><a [routerLink]="'/archiveDocuments/document'"
+                              [routerLinkActive]="'active'"
+                              [routerLinkActiveOptions]="{ exact: true }" class="nav-link" class="nav-link active" aria-current="page">Архивные документы форма</a></li>
+      <li class="nav-item"><a [routerLink]="'/documents'"
+                              [routerLinkActive]="'active'"
+                              [routerLinkActiveOptions]="{ exact: true }" class="nav-link">Документы</a></li>
+      <li class="nav-item"><a [routerLink]="'/documents/document'"
+                              [routerLinkActive]="'active'"
+                              [routerLinkActiveOptions]="{ exact: true }" class="nav-link">Документы форма</a></li>
+      <li class="nav-item"><a [routerLink]="'/documentTypes'"
+                              [routerLinkActive]="'active'"
+                              [routerLinkActiveOptions]="{ exact: true }" class="nav-link">Типы документов</a></li>
+      <li class="nav-item"><a [routerLink]="'/documentTypes/documentType'"
+                              [routerLinkActive]="'active'"
+                              [routerLinkActiveOptions]="{ exact: true }" class="nav-link">Типы документов форма</a></li>
+      <li class="nav-item"><a [routerLink]="'/employees'"
+                              [routerLinkActive]="'active'"
+                              [routerLinkActiveOptions]="{ exact: true }" class="nav-link">Работники</a></li>
+      <li class="nav-item"><a [routerLink]="'/employees/employee'"
+                              [routerLinkActive]="'active'"
+                              [routerLinkActiveOptions]="{ exact: true }" class="nav-link">Работники форма</a></li>
+      <li class="nav-item"><a [routerLink]="'/roles'"
+                              [routerLinkActive]="'active'"
+                              [routerLinkActiveOptions]="{ exact: true }" class="nav-link">Роли</a></li>
+      <li class="nav-item"><a [routerLink]="'/roles/role'"
+                              [routerLinkActive]="'active'"
+                              [routerLinkActiveOptions]="{ exact: true }" class="nav-link">Роли форма</a></li>
+      <li class="nav-item"><a [routerLink]="'/storagePlaces'"
+                              [routerLinkActive]="'active'"
+                              [routerLinkActiveOptions]="{ exact: true }" class="nav-link">Места хранения</a></li>
+      <li class="nav-item"><a [routerLink]="'/storagePlaces/storagePlace'"
+                              [routerLinkActive]="'active'"
+                              [routerLinkActiveOptions]="{ exact: true }" class="nav-link">Места хранения форма</a></li>
+    </ul>
+  </header>
+</div>
+
+
+
+
+
+

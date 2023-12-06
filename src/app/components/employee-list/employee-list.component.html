@@ -1,0 +1,28 @@
+<div class="container-fluid mt-3 ml3">
+  <div class="table-responsive">
+    <table class="table w-100">
+      <thead>
+      <tr>
+        <th scope="col">Код</th>
+        <th scope="col">Имя</th>
+        <th scope="col">Фамилия</th>
+        <th scope="col">Отчество</th>
+        <th scope="col">Роль</th>
+        <th scope="col">Имеил</th>
+        <th scope="col">Телефон</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr *ngFor="let employee of employees" (click)="linkTo(employee.id)">
+        <td>{{ employee.id }}</td>
+        <td>{{ employee.name }}</td>
+        <td>{{ employee.surname }}</td>
+        <td>{{ employee.patronymic }}</td>
+        <td>{{ employee.role.name }}</td>
+        <td>{{ employee.email }}</td>
+        <td>{{ employee.telephoneNumber }}</td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

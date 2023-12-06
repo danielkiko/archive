@@ -1,0 +1,22 @@
+<div class="container-fluid mt-3 ml3">
+  <div class="table-responsive">
+    <table class="table w-100">
+      <thead>
+      <tr>
+        <th scope="col">Код</th>
+        <th scope="col">Имя</th>
+        <th scope="col">Адрес</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr *ngFor="let storagePlace of storagePlaces" (click)="linkToRole(storagePlace.id)">
+        <!--        <td *ngIf="student.patronymic; else noSurName">{{ student.surname }} {{ student.name.charAt(0) }}. {{ student.patronymic.charAt(0) }}.</td>-->
+        <!--        <ng-template #noSurName><td>{{ student.surname }} {{ student.name.charAt(0) }}.</td></ng-template>-->
+        <td>{{ storagePlace.id }}</td>
+        <td>{{ storagePlace.name }}</td>
+        <td>{{ storagePlace.address }}</td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

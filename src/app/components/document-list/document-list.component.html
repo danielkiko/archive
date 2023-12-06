@@ -1,0 +1,26 @@
+<div class="container-fluid mt-3 ml3">
+  <div class="table-responsive">
+    <table class="table w-100">
+      <thead>
+      <tr>
+        <th scope="col">Код</th>
+        <th scope="col">Имя</th>
+        <th scope="col">Тип</th>
+        <th scope="col">Ссылка</th>
+        <th scope="col">Дата создания</th>
+        <th scope="col">Дата просрочки</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr *ngFor="let document of documents" (click)="linkTo(document.id)">
+        <td>{{ document.id }}</td>
+        <td>{{ document.name }}</td>
+        <td>{{ document.documentType.name }}</td>
+        <td>{{ document.content }}</td>
+        <td>{{ document.creationDate }}</td>
+        <td>{{ document.expirationDate }}</td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
